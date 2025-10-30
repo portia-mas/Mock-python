@@ -47,12 +47,20 @@ Function: `find_min(numbers)`
 Returns the smallest number in a list.  
 **Example:** `find_min([1,2,3]) -> 1`
 
----
+7. **Person Class**  
+Class: `Person`  
+- Attributes: `name` (str), `age` (int)  
+- Method: `greet()` → returns `"Hello, my name is {name} and I am {age} years old."`  
+**Example:**
+```python
+p = Person("Alice", 25)
+p.greet()  # "Hello, my name is Alice and I am 25 years old."
 
-## ⚡ How to Run Locally
 
-### 1. Clone your fork
-```bash
+
+**⚡ How to Run Locally**
+1. Clone your fork
+
 git clone https://github.com/YOUR_USERNAME/mock-python.git
 cd mock-python
 
@@ -77,9 +85,4 @@ pytest -v
 
     Run the tests locally before submitting a PR.
 
-    Make sure your PR passes the automated checks before asking for a review.
-
     Debugging is part of the fun — try different approaches and see what works!
-
-
----

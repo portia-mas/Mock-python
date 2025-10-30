@@ -1,65 +1,124 @@
 # mock-python: Beginner Exercises
 # --------------------------------
-# Complete the following functions according to the instructions.
-# Each function will be tested automatically using unittests.
+# Complete the following functions and class according to the instructions.
 
 # Exercise 1: Add Numbers
-# Write a function that accepts two numbers and returns their sum.
 """
-Example: add_numbers(2, 3) -> 5
+Returns the sum of two numbers.
+
+Example:
+    add_numbers(2, 3) -> 5
+    add_numbers(-1, 4) -> 3
 """
 def add_numbers(a, b):
-    # Your code here
     pass
 
 
 # Exercise 2: Subtract Numbers
-# Write a function that accepts two numbers and returns the result of the first minus the second.
-"""Example: subtract_numbers(5, 3) -> 2"""
+"""
+Returns the result of a minus b.
+
+Example:
+    subtract_numbers(5, 3) -> 2
+    subtract_numbers(3, 5) -> -2
+"""
 def subtract_numbers(a, b):
-    # Your code here
     pass
 
 
-
 # Exercise 3: FruitLoop
-# Print numbers from 1 to n, replacing certain numbers:
-# - Multiples of 3 -> "Fruit"
-# - Multiples of 5 -> "Loop"
-# - Multiples of both 3 and 5 -> "FruitLoop"
 """
-Example: fruitloop(5) prints:
-1
-2
-Fruit
-4
-Loop
-"""
+Print numbers from 1 to n, replacing multiples:
+- Multiples of 3 -> "Fruit"
+- Multiples of 5 -> "Loop"
+- Multiples of both 3 and 5 -> "FruitLoop"
 
+Example:
+    fruitloop(5) prints:
+    1
+    2
+    Fruit
+    4
+    Loop
+"""
 def fruitloop(n):
-    # Your code here
     pass
 
 
 # Exercise 4: Fibonacci
-# Return the nth Fibonacci number (0-indexed: 0,1,1,2,3,5,8...)
-"""Example: fibonacci(5) -> 5"""
+"""
+Returns the nth Fibonacci number (0-indexed: 0,1,1,2,3,5...).
+
+Example:
+    fibonacci(5) -> 5
+    fibonacci(7) -> 13
+"""
 def fibonacci(n: int):
-    # Your code here
     pass
 
 
 # Exercise 5: Find Maximum
-# Returns the largest number in a list
-"""Example: find_max([1,2,3]) -> 3"""
+"""
+Returns the largest number in a list.
+
+Example:
+    find_max([1,2,3]) -> 3
+    find_max([-1,-5,-3]) -> -1
+"""
 def find_max(numbers: list):
-    # Your code here
     pass
 
 
 # Exercise 6: Find Minimum
-# Returns the smallest number in a list
-"""Example: find_min([1,2,3]) -> 1"""
+"""
+Returns the smallest number in a list.
+
+Example:
+    find_min([1,2,3]) -> 1
+    find_min([-1,-5,-3]) -> -5
+"""
 def find_min(numbers: list):
-    # Your code here
     pass
+
+
+# Exercise 7: Person Class
+"""
+Represents a person with a name and age.
+
+Attributes:
+    name (str): Name of the person
+    age (int): Age of the person
+
+Method:
+    greet() -> "Hello, my name is {name} and I am {age} years old."
+
+Example:
+    p = Person("Alice", 25)
+    p.greet() -> "Hello, my name is Alice and I am 25 years old."
+"""
+class Person:
+    def __init__(self, name: str, age: int):
+        pass
+
+    def greet(self):
+        pass
+
+
+
+
+
+# Example usage (can be removed or commented out during testing)
+# This part is just for demonstration and won't be executed during tests.
+# Remove docstrings to see how the functions and class work.
+"""
+if __name__ == "__main__":
+    # Example usage (can be removed or commented out during testing)
+    print(add_numbers(2, 3))  # Should print 5
+    print(subtract_numbers(5, 3))  # Should print 2
+    fruitloop(15)  # Should print numbers and words as per the rules
+    print(fibonacci(10))  # Should print 55
+    print(find_max([1, 2, 3, 4, 5]))  # Should print 5
+    print(find_min([1, 2, 3, 4, 5]))  # Should print 1
+    p = Person("Alice", 25)
+    print(p.greet())  # Should print greeting message
+"""
