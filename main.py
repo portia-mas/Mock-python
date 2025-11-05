@@ -11,6 +11,7 @@ Example:
     add_numbers(-1, 4) -> 3
 """
 def add_numbers(a, b):
+    return a + b 
     pass
 
 
@@ -23,6 +24,7 @@ Example:
     subtract_numbers(3, 5) -> -2
 """
 def subtract_numbers(a, b):
+    return a - b
     pass
 
 
@@ -42,6 +44,15 @@ Example:
     Loop
 """
 def fruitloop(n):
+
+    if n % 3 == 0 and n % 5 == 0:
+        return "FruitLoop"
+    
+    elif n % 3 == 0 :
+        return "Fruit"
+    
+    elif n % 5 == 0:
+        return "Loop"
     pass
 
 
@@ -54,6 +65,13 @@ Example:
     fibonacci(7) -> 13
 """
 def fibonacci(n: int):
+
+    if n > n - 1:
+        return ((n - 1) + (n - 2))
+    
+    elif n > n + 1:
+        return ((n + 1) + (n + 2))
+
     pass
 
 
@@ -66,6 +84,7 @@ Example:
     find_max([-1,-5,-3]) -> -1
 """
 def find_max(numbers: list):
+    return max(numbers)
     pass
 
 
@@ -78,6 +97,7 @@ Example:
     find_min([-1,-5,-3]) -> -5
 """
 def find_min(numbers: list):
+    return min(numbers)
     pass
 
 
@@ -98,9 +118,12 @@ Example:
 """
 class Person:
     def __init__(self, name: str, age: int):
+        self.name = name
+        self.age = age
         pass
 
     def greet(self):
+        return f"Hello, my name is {self.name} and I am {self.age} years old"
         pass
 
 
@@ -122,3 +145,13 @@ if __name__ == "__main__":
     p = Person("Alice", 25)
     print(p.greet())  # Should print greeting message
 """
+
+if __name__ == "__main__":
+    print(add_numbers(55, 5))
+    print(subtract_numbers(5, 3))
+    print(fruitloop(15))
+    print(fibonacci(10))
+    print(find_max([1, 2, 3, 4, 5]))
+    print(find_min([1, 2, 3, 4, 5]))
+    p = Person("Alice", 25)
+    print(p.greet()) 
